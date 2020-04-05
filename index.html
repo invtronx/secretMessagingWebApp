@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Secret Message</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+	<style>
+		.row {
+			margin-top: 25vh;
+		}
+		h1 {
+			margin-top: 0;
+		}
+	</style>
+	<script src="app.js" defer></script>
+</head>
+<body>
+	<div class="row">
+		<div class="col s8 offset-s2">
+
+			<div class="card-panel" id="message-form">
+				<form>
+					<label>Enter a Secret Message</label>
+					<input id="message-input" />
+					<button class="btn">Create</button>
+				</form>
+			</div>
+
+			<div class="card hide" id="link-form">
+				<div class="card-content"><span>Share this link with a friend</span></div>
+				<div class="card-action">
+					<input id="link-input" />
+					<button class="btn" id="copy-btn">Copy</button>
+				</div>
+			</div>
+
+			<div class="card-panel hide" id="message-show">
+				<h1></h1>
+				<div>
+					<a href="./index.html">Create your own secret message</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
